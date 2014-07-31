@@ -18,11 +18,11 @@ import scala.math._
 class SurfaceDemo extends AbstractAnalysis{
 
   override def init: Unit = {
-    var mapper: Mapper = new Mapper() {
+    val mapper: Mapper = new Mapper() {
       def f(x: Double, y: Double) = {
     	  val xDash = x * cos(Pi / 4) - y * sin(Pi / 4)
-  	    val yDash = x * sin(Pi / 4) + y * cos(Pi / 4)
-      	3 * exp(-1 * (pow(xDash / 1, 2) + pow(yDash / 0.5, 2))) * cos(-2 * Pi * (1 * xDash + 0.5 * yDash) - 0.0) 
+ 	      val yDash = x * sin(Pi / 4) + y * cos(Pi / 4)
+       	3 * exp(-1 * (pow(xDash / 1, 2) + pow(yDash / 0.5, 2))) * cos(-2 * Pi * (1 * xDash + 0.5 * yDash) - 0.0) 
       }
     }
 
