@@ -37,7 +37,7 @@ class SurfaceDemo extends AbstractAnalysis{
     // Create a chart
     chart = AWTChartComponentFactory.chart(Quality.Advanced, getCanvasType())
     chart.getScene().getGraph().add(surface)
-	}
+  }
 }
 
 object SurfaceDemo{
